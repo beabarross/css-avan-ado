@@ -1,0 +1,79 @@
+$cor-primaria: #b6b4d4;
+$cor-secundaria: #8797B1;
+$cor-terciaria: #6D8A96;
+$cor-quartenaria: #5d707f;
+$cor-quinquenaria: #66ced7;
+$tamanho-campos: 8px;
+
+.atividade1 {
+    div {
+        background-color: $cor-primaria;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+        color: $cor-terciaria;
+    }
+
+    input {
+        padding: $tamanho-campos;
+        border: 1px solid $cor-quartenaria;
+    }
+
+    button {
+        padding: $tamanho-campos;
+        border: 1px solid $cor-quartenaria;
+        background-color: $cor-quartenaria;
+    }
+
+    form {
+
+        .campos {
+            border: 2px solid $cor-terciaria;
+            padding: 10px;
+        }
+
+        .campos:hover {
+            border-color: #66ced7;
+        }
+
+        input {
+            @extend .campos;
+        }
+
+        textarea {
+            @extend .campos;
+        }
+
+        button {
+            @extend .campos;
+            background-color: $cor-terciaria;
+        }
+
+    }
+}
+
+.atividade2 {
+    .titulos {
+        background-color: $cor-secundaria;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    h1 {
+        @extend .titulos;
+        color: red;
+    }
+
+    h2 {
+        @extend .titulos;
+        color: blue;
+    }
+
+    h3 {
+        @extend .titulos;
+        color: green;
+    }
+}
