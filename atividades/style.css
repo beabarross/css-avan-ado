@@ -72,4 +72,14 @@
   border-color: rgb(229.5, 148.5, 0);
 }
 
+.atividadeMixin .card-primario {
+  background-color: purple;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 20px rgba(94, 81, 81, 0.267);
+  width: 200px;
+  height: 150px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -124,3 +124,20 @@ $tamanho-campos: 8px;
         border-color: darken($cor-botao-alerta, $amount: 5%);
     }
 }
+
+.atividadeMixin {
+    @mixin card-styles ($background, $text-color, $border-radius) {
+        background-color: $background;
+        color: $text-color;
+        padding: 20px;
+        border-radius: $border-radius;
+        box-shadow: 0 3px 20px rgba(94, 81, 81, 0.267);
+        width: 200px;
+        height: 150px;
+
+    }
+
+    .card-primario {
+        @include card-styles(purple, white, 10px)
+    }
+}
