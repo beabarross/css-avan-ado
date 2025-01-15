@@ -64,17 +64,102 @@ main {
 }
 
 .ultimo-conteudo-add {
+
+    @include display-flex(column, center);
+
+    h2 {
+        text-align: center;
+        color: $cor-primaria;
+    }
+
+
     table {
         width: 100%;
-        text-align: center; 
+        text-align: center;
+        color: blue; 
+    
 
-        td {
-            border-right: 1px solid;
-        }
-
-        th {
-            border-bottom: 1px solid black;
-            color: $cor-primaria;
-        }
+    @mixin linha($tmBorda) {
+        padding: 10px;
+        border-bottom: $tmBorda solid rgb(136, 37, 103);
     }
+
+    th {
+        @include linha(2px)
+
+    }
+    
+    td {
+        @include linha(2px)
+
+    }
+
+    .assunto {
+        display: flex;
+        justify-content: center;
+   
+
+    @mixin assuntoPadrao ($corFundo) {
+        background-color: $corFundo;
+        min-width: 80%;
+        color: white;
+        text-transform: uppercase;
+      
+    }
+    .assuntoWeb {
+        @include assuntoPadrao(hotpink);
+    }
+
+    .assuntoWeb2 {
+        @include assuntoPadrao(rgb(112, 46, 79));
+    }
+
+    .assuntoDesktop {
+        @include assuntoPadrao(rgb(132, 132, 228));
+      
+    }
+
+    .assuntoRedes {
+        @include assuntoPadrao(rgb(31, 31, 78));
+    }
+    }
+
+    .score {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+   
+
+    .like {
+        color: green;
+    }
+
+    .dislike {
+        color: red;
+    }
+
+    .star {
+        color: goldenrod;
+    }
+}
+}
+
+.botao {
+    @include display-flex(row, center);
+
+
+    button {
+        padding: 15px;
+        background-color: white;
+        border: 1px solid $cor-primaria;
+        color: $cor-primaria;
+        border-radius: 10px;
+        text-transform: uppercase;
+
+    }
+
+}
+
+    
 }

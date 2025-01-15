@@ -49,16 +49,83 @@ main button {
   background-color: purple;
 }
 
+.ultimo-conteudo-add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ultimo-conteudo-add h2 {
+  text-align: center;
+  color: rgb(145, 39, 83);
+}
 .ultimo-conteudo-add table {
   width: 100%;
   text-align: center;
-}
-.ultimo-conteudo-add table td {
-  border-right: 1px solid;
+  color: blue;
 }
 .ultimo-conteudo-add table th {
-  border-bottom: 1px solid black;
+  padding: 10px;
+  border-bottom: 2px solid rgb(136, 37, 103);
+}
+.ultimo-conteudo-add table td {
+  padding: 10px;
+  border-bottom: 2px solid rgb(136, 37, 103);
+}
+.ultimo-conteudo-add table .assunto {
+  display: flex;
+  justify-content: center;
+}
+.ultimo-conteudo-add table .assunto .assuntoWeb {
+  background-color: hotpink;
+  min-width: 80%;
+  color: white;
+  text-transform: uppercase;
+}
+.ultimo-conteudo-add table .assunto .assuntoWeb2 {
+  background-color: rgb(112, 46, 79);
+  min-width: 80%;
+  color: white;
+  text-transform: uppercase;
+}
+.ultimo-conteudo-add table .assunto .assuntoDesktop {
+  background-color: rgb(132, 132, 228);
+  min-width: 80%;
+  color: white;
+  text-transform: uppercase;
+}
+.ultimo-conteudo-add table .assunto .assuntoRedes {
+  background-color: rgb(31, 31, 78);
+  min-width: 80%;
+  color: white;
+  text-transform: uppercase;
+}
+.ultimo-conteudo-add table .score {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ultimo-conteudo-add table .score .like {
+  color: green;
+}
+.ultimo-conteudo-add table .score .dislike {
+  color: red;
+}
+.ultimo-conteudo-add table .score .star {
+  color: goldenrod;
+}
+.ultimo-conteudo-add .botao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ultimo-conteudo-add .botao button {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid rgb(145, 39, 83);
   color: rgb(145, 39, 83);
+  border-radius: 10px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

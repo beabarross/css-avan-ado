@@ -141,3 +141,24 @@ $tamanho-campos: 8px;
         @include card-styles(purple, white, 10px)
     }
 }
+
+.loops {
+    $tamanhoTela: 12;
+    @for $i from 1 through $tamanhoTela {
+        .col-#{$i} {
+            width: calc(100% / $tamanhoTela) * $i;
+        }
+    }
+
+    div {
+        height: 50px;
+        background-color: #5d707f;
+        border: 2px solid white;
+    }
+
+    .linha {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+}
