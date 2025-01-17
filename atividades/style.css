@@ -129,4 +129,13 @@
   background-color: white;
 }
 
+.animacoes button {
+  background-color: #66ced7;
+  transition: background-color 2s, transform 1s;
+}
+.animacoes button:hover {
+  background-color: brown;
+  transform: scale(1.5);
+}
+
 /*# sourceMappingURL=style.css.map */
